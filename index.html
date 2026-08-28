@@ -3,27 +3,122 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Golden Party Casino: Slots - Support</title>
+<title>Golden Party Casino: Slots</title>
+<meta name="description" content="Golden Party Casino: Slots - a free-to-play social casino for iPhone. Six themed slot machines, a daily bonus wheel, missions and card albums. Virtual coins only, 18+.">
+<meta property="og:title" content="Golden Party Casino: Slots">
+<meta property="og:description" content="Six themed slot machines, a daily bonus wheel, missions and card albums. Free to play on iPhone. Virtual coins only, 18+.">
+<meta property="og:image" content="https://pacificfrontdesk.github.io/goldenpartycasino/img/card_party.jpg">
 <style>
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-         max-width: 640px; margin: 0 auto; padding: 48px 20px; color: #222; line-height: 1.7;
-         text-align: center; }
-  h1 { font-size: 1.7em; }
-  .links a { display: inline-block; margin: 8px 14px; color: #7c3aed; font-weight: 600; }
-  .note { color: #777; font-size: 0.9em; margin-top: 28px; }
+  :root {
+    --gold: #FFD24A; --gold-hi: #FFF2B0; --gold-lo: #D89000;
+    --purple: #1B0E33; --purple-2: #2A1246; --text: #EFE6FF; --dim: #B9A3E0;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: radial-gradient(120% 90% at 50% 0%, #3A1B63 0%, var(--purple-2) 40%, var(--purple) 100%);
+    color: var(--text); line-height: 1.6; min-height: 100vh;
+  }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 20px; }
+  header { text-align: center; padding: 64px 0 40px; }
+  .crown { width: 110px; height: auto; filter: drop-shadow(0 6px 18px rgba(255,210,74,.35)); }
+  h1 {
+    font-size: clamp(2rem, 6vw, 3.4rem); font-weight: 900; letter-spacing: .02em;
+    background: linear-gradient(180deg, var(--gold-hi), var(--gold) 55%, var(--gold-lo));
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    margin: 14px 0 8px; text-transform: uppercase;
+  }
+  .tagline { color: var(--dim); font-size: 1.1rem; font-weight: 600; }
+  .cta {
+    display: inline-block; margin-top: 26px; padding: 14px 38px; border-radius: 999px;
+    background: linear-gradient(180deg, var(--gold-hi), var(--gold) 55%, var(--gold-lo));
+    color: #4A2500; font-weight: 900; font-size: 1.05rem; text-decoration: none;
+    letter-spacing: .04em; box-shadow: 0 8px 24px rgba(255,210,74,.35);
+  }
+  .cta small { display: block; font-size: .7rem; font-weight: 700; opacity: .8; }
+  section { padding: 34px 0; }
+  h2 {
+    text-align: center; font-size: 1.5rem; font-weight: 900; text-transform: uppercase;
+    letter-spacing: .06em; color: var(--gold); margin-bottom: 26px;
+  }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
+  .card {
+    background: rgba(0,0,0,.35); border: 1.5px solid rgba(255,210,74,.35);
+    border-radius: 18px; overflow: hidden; text-align: center; padding-bottom: 16px;
+  }
+  .card img { width: 100%; height: 190px; object-fit: cover; display: block; }
+  .card h3 { font-size: 1rem; font-weight: 900; margin: 12px 0 3px; letter-spacing: .03em; }
+  .card p { font-size: .85rem; color: var(--dim); padding: 0 12px; }
+  .feats { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; text-align: center; }
+  .feat { background: rgba(0,0,0,.28); border-radius: 18px; padding: 24px 18px; border: 1.5px solid rgba(255,255,255,.08); }
+  .feat img { width: 64px; height: 64px; object-fit: contain; }
+  .feat h3 { font-size: 1rem; font-weight: 900; margin: 10px 0 4px; color: var(--gold); }
+  .feat p { font-size: .88rem; color: var(--dim); }
+  .fair {
+    background: rgba(0,0,0,.35); border: 1.5px solid rgba(255,210,74,.25); border-radius: 18px;
+    padding: 26px 28px; font-size: .92rem; color: var(--dim); text-align: center;
+  }
+  .fair strong { color: var(--text); }
+  footer { text-align: center; padding: 40px 0 56px; color: var(--dim); font-size: .9rem; }
+  footer a { color: var(--gold); font-weight: 700; text-decoration: none; margin: 0 10px; }
+  .age {
+    display: inline-block; border: 2px solid var(--gold); border-radius: 8px; padding: 2px 10px;
+    font-weight: 900; color: var(--gold); margin-bottom: 14px; letter-spacing: .05em;
+  }
 </style>
 </head>
 <body>
-<h1>🎰 Golden Party Casino: Slots</h1>
-<p>A free-to-play social casino game for iOS. Coins are virtual, for
-entertainment only - no cash value, no real-money winnings.</p>
-<p>Support and questions:
-<a href="mailto:goldenpartycasino@pacificfrontdesk.com">goldenpartycasino@pacificfrontdesk.com</a></p>
-<p class="links">
-  <a href="privacy.html">Privacy Policy</a> ·
-  <a href="terms.html">Terms of Service</a>
-</p>
-<p class="note">Intended for adult audiences (18+). Practice or success at
-social casino gaming does not imply future success at real-money gambling.</p>
+<div class="wrap">
+
+  <header>
+    <img class="crown" src="img/party_CROWN.png" alt="">
+    <h1>Golden Party Casino</h1>
+    <p class="tagline">Six dazzling slot machines. One golden party. Free to play on iPhone.</p>
+    <a class="cta" href="mailto:goldenpartycasino@pacificfrontdesk.com?subject=Golden%20Party%20Casino%20-%20notify%20me">COMING SOON TO THE APP STORE<small>get notified at launch</small></a>
+  </header>
+
+  <section>
+    <h2>The Machines</h2>
+    <div class="grid">
+      <div class="card"><img src="img/card_party.jpg" alt="Party Slots"><h3>PARTY SLOTS</h3><p>Classic party vibes · frequent wins</p></div>
+      <div class="card"><img src="img/card_pharaoh.jpg" alt="Pharaoh's Fortune"><h3>PHARAOH'S FORTUNE</h3><p>High volatility · huge top wins</p></div>
+      <div class="card"><img src="img/card_dragon.jpg" alt="Dragon's Hoard"><h3>DRAGON'S HOARD</h3><p>Cascading wins · chains up to ×5</p></div>
+      <div class="card"><img src="img/card_sugar.jpg" alt="Sugar Rush"><h3>SUGAR RUSH</h3><p>Candy wilds ×2 ×3 ×5</p></div>
+      <div class="card"><img src="img/card_bandit.jpg" alt="Lucky Bandit"><h3>LUCKY BANDIT</h3><p>The original one-armed bandit · pick your lines</p></div>
+      <div class="card"><img src="img/card_neon.jpg" alt="Neon Heist"><h3>NEON HEIST</h3><p>Breach the system · wilds go viral</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Every Day Is a Party</h2>
+    <div class="feats">
+      <div class="feat"><img src="img/ui_icon_wheel.png" alt=""><h3>DAILY WHEEL</h3><p>A free spin every day - build a streak for up to ×2.5 rewards.</p></div>
+      <div class="feat"><img src="img/ui_icon_missions.png" alt=""><h3>DAILY MISSIONS</h3><p>Three fresh missions a day, plus a bonus for clearing them all.</p></div>
+      <div class="feat"><img src="img/ui_icon_albums.png" alt=""><h3>CARD ALBUMS</h3><p>Collect all six cards on each machine to earn its golden frame.</p></div>
+      <div class="feat"><img src="img/ui_coin.png" alt=""><h3>FREE COINS</h3><p>A free gift every four hours and a 2,000,000-coin welcome bonus.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="fair">
+      <div class="age">18+</div>
+      <p><strong>Golden Party Casino: Slots is a free-to-play social casino game.</strong>
+      Coins are virtual and for entertainment only - they have no cash value and cannot be
+      withdrawn, redeemed, or exchanged for real money or prizes. Practice or success at
+      social casino gaming does not imply future success at real-money gambling.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      <a href="privacy.html">Privacy Policy</a> ·
+      <a href="terms.html">Terms of Service</a> ·
+      <a href="https://www.facebook.com/goldenpartycasino/">Facebook</a>
+    </p>
+    <p style="margin-top:10px">Support: <a href="mailto:goldenpartycasino@pacificfrontdesk.com">goldenpartycasino@pacificfrontdesk.com</a></p>
+    <p style="margin-top:10px">© 2026 Pacific Front Desk · Nattskift Games</p>
+  </footer>
+
+</div>
 </body>
 </html>
